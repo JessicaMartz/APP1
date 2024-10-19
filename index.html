@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de Música</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <h1>Reproductor de Música</h1>
+    <div id="songDetails">
+      <p id="songTitle">Selecciona una canción para alquilar.</p>
+      <p id="timeLeft">Tiempo restante: 00:00</p>
+    </div>
+    
+    <div class="controls">
+      <button id="playButton" onclick="playSong()">Alquilar y Reproducir</button>
+      <button id="stopButton" onclick="stopSong()">Detener</button>
+    </div>
+    
+    <h2>Canciones disponibles para alquilar:</h2>
+    <ul id="songList">
+      <li>
+        <button onclick="selectSong('song1', 'Canción 1', 'song1.mp3')">Canción 1</button>
+      </li>
+      <li>
+        <button onclick="selectSong('song2', 'Canción 2', 'song2.mp3')">Canción 2</button>
+      </li>
+      <li>
+        <button onclick="selectSong('song3', 'Canción 3', 'song3.mp3')">Canción 3</button>
+      </li>
+    </ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
